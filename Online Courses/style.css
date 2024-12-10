@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+header {
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 25px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #f39c12;
+}
+
+section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #fff;
+    margin: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.courses-container, .categories-container, .testimonials, .blog-post, .achievements, .free-course {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.course-card, .category-card, .testimonial, .blog-post, .achievement, .free-course {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 25px;
+    width: 270px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover, .category-card:hover, .testimonial:hover, .blog-post:hover, .free-course:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.course-card img, .category-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.course-card h3, .category-card h3 {
+    color: #34495e;
+    margin: 15px 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.course-card p, .category-card p {
+    color: #7f8c8d;
+    font-size: 16px;
+}
+
+.testimonial {
+    background-color: #f39c12;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+    font-style: italic;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#contact form {
+    max-width: 650px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact input, #contact textarea {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#contact input:focus, #contact textarea:focus {
+    border-color: #f39c12;
+}
+
+#contact button {
+    padding: 12px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #e67e22;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #34495e;
+    color: white;
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #f39c12;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: white;
+}
